@@ -4,16 +4,12 @@ Deploy gratis di: https://streamlit.io/cloud
 """
 
 import streamlit as st
-import os
-import warnings
-warnings.filterwarnings("ignore")
-
 import numpy as np
 import pandas as pd
-import matplotlib
-matplotlib.use("Agg")          # ← wajib di server tanpa display
 import matplotlib.pyplot as plt
 import joblib
+import os
+import gdown
 
 # ── Page config ──────────────────────────────────────────────────
 st.set_page_config(
